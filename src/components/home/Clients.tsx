@@ -5,13 +5,19 @@ import oracle from "@assets/shared/desktop/oracle.svg";
 import google from "@assets/shared/desktop/google.svg";
 import nvidia from "@assets/shared/desktop/nvidia.svg";
 import circle from "@assets/shared/desktop/bg-pattern-circle.svg";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const Clients = () => {
   const clients: string[] = [tesla, microsoft, hewlett, oracle, google, nvidia];
 
   return (
-    <section className="flex flex-col gap-16 overflow-hidden bg-mirage-blue-#1B262F px-6 py-20 text-[#FBFCFE] md:px-28 md:py-[5.5rem] xl:flex-row-reverse xl:items-center xl:justify-center xl:gap-[8.1875rem] xl:px-40 xl:py-[6.25rem] mb-20 md:mb-[6.25rem] xl:mb-[1.125rem]">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{duration: 1}}
+      className="mb-20 flex flex-col gap-16 overflow-hidden bg-mirage-blue-#1B262F px-6 py-20 text-[#FBFCFE] md:mb-[6.25rem] md:px-28 md:py-[5.5rem] xl:mb-[1.125rem] xl:flex-row-reverse xl:items-center xl:justify-center xl:gap-[8.1875rem] xl:px-40 xl:py-[6.25rem]"
+    >
       <div className="relative grid grid-cols-2 place-items-center gap-x-[3.0625rem] gap-y-11 md:grid-cols-3 md:gap-x-[3.75rem] md:gap-y-10">
         {clients.map((client) => {
           return <img src={client} alt={client + " logo"} />;
@@ -39,7 +45,7 @@ const Clients = () => {
           About Us
         </Link>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
