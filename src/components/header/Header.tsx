@@ -26,7 +26,7 @@ const Header = () => {
     setShowNav((prev) => !prev);
   };
   return (
-    <header className={`fixed top-0 z-[999] flex w-full justify-center transition-all duration-500 ${isScrolled ? "bg-white shadow-md" : "bg-transparent shadow-none"}`}>
+    <header className={`fixed top-0 z-[999] flex w-full justify-center transition-all duration-500 ${isScrolled ? "bg-[#FBFCFE] shadow-md" : "bg-transparent shadow-none"}`}>
       <div
         className="flex w-full items-center justify-between overflow-hidden px-6 py-10 md:gap-16 md:px-10 xl:w-[1110px] xl:px-0"
       >

@@ -1,0 +1,107 @@
+[
+  {
+    "title": "Free Plan",
+    "desc": "Build and test using our core set of products with up to 100 API requests ",
+    "price": 0.00,
+    "inclusions": [
+      {
+        "name": "Transactions",
+        "included": true
+      },
+      {
+        "name": "Auth",
+        "included": true
+      },
+      {
+        "name": "Identity",
+        "included": true
+      },
+      {
+        "name": "Investments",
+        "included": false
+      },
+      {
+        "name": "Assets",
+        "included": false
+      },
+      {
+        "name": "Liabilities",
+        "included": false
+      },
+      {
+        "name": "Income",
+        "included": false
+      }
+    ]
+  },
+  {
+    "title": "Basic Plan",
+    "desc": "Launch your project with unlimited requests and no contractual minimums  ",
+    "price": 249.00,
+    "inclusions": [
+      {
+        "name": "Transactions",
+        "included": true
+      },
+      {
+        "name": "Auth",
+        "included": true
+      },
+      {
+        "name": "Identity",
+        "included": true
+      },
+      {
+        "name": "Investments",
+        "included": true
+      },
+      {
+        "name": "Assets",
+        "included": true
+      },
+      {
+        "name": "Liabilities",
+        "included": false
+      },
+      {
+        "name": "Income",
+        "included": false
+      }
+    ]
+  },
+  {
+    "title": "Premium Plan",
+    "desc": "Get tailored solutions, volume pricing, and dedicated support for your team  ",
+    "price": 499.00,
+    "inclusions": [
+      {
+        "name": "Transactions",
+        "included": true
+      },
+      {
+        "name": "Auth",
+        "included": true
+      },
+      {
+        "name": "Identity",
+        "included": true
+      },
+      {
+        "name": "Investments",
+        "included": true
+      },
+      {
+        "name": "Assets",
+        "included": true
+      },
+      {
+        "name": "Liabilities",
+        "included": true
+      },
+      {
+        "name": "Income",
+        "included": true
+      }
+    ]
+  }
+]

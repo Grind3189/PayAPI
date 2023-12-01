@@ -27,7 +27,7 @@ const Navbar = ({ showNav, toggleNav }: NavbarProp) => {
   ];
   return (
     <nav
-      className={`max-md:bg-mirage-blue-#1B262F right-0 top-0 z-50 h-full w-[85%] px-6 transition-all max-md:fixed md:flex md:items-center ${
+      className={`right-0 top-0 z-50 h-full w-[85%] px-6 transition-all max-md:fixed max-md:bg-mirage-blue-#1B262F md:flex md:items-center ${
         showNav
           ? "visible translate-x-0 opacity-100"
           : "max-md:invisible max-md:translate-x-[50%] max-md:opacity-0"
@@ -40,11 +40,11 @@ const Navbar = ({ showNav, toggleNav }: NavbarProp) => {
         <div className="border-b border-b-[#FBFCFE] opacity-[.15]" />
       </div>
 
-      <ul className="font-publicSans md:text-sanjuan-blue-#36536B flex gap-8 text-center text-[1.25rem] font-bold max-md:mb-8 max-md:flex-col max-md:text-[#FBFCFE] md:text-[0.9375rem]">
+      <ul className="flex gap-8 text-center font-publicSans text-[1.25rem] font-bold max-md:mb-8 max-md:flex-col max-md:text-[#FBFCFE] md:text-[0.9375rem] md:text-sanjuan-blue-#36536B">
         {navigations.map((nav) => {
           return (
             <li className="opacity-75 lg:hover:opacity-100">
-              <Link to="#">{nav.name}</Link>
+              <Link to={nav.link}>{nav.name}</Link>
             </li>
           );
         })}
@@ -52,7 +52,7 @@ const Navbar = ({ showNav, toggleNav }: NavbarProp) => {
 
       <Link
         to="#"
-        className="bg-dark-pink-##BA4270 lg:hover:bg-[#DA6D97] inline-block rounded-3xl py-[0.875rem] text-center font-bold text-[#FBFCFE] max-md:w-full md:px-6 md:ml-auto"
+        className="inline-block rounded-3xl bg-dark-pink-##BA4270 py-[0.875rem] text-center font-bold text-[#FBFCFE] max-md:w-full md:ml-auto md:px-6 lg:hover:bg-[#DA6D97]"
       >
         Schedule a Demo
       </Link>
