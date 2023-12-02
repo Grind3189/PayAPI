@@ -21,7 +21,7 @@ const Plan = ({ plan }: PlanProp) => {
       <h1 className="mb-[5.0625rem] font-dm text-[1.5rem] tracking-[-0.185px] text-dark-pink-##BA4270 md:mb-[0.8125rem]">
         {plan.title}
       </h1>
-      <p className="font-publicSans text-[0.9375rem] text-lightsanjuan-blue-#6C8294 max-md:hidden">
+      <p className="font-publicSans text-[0.9375rem] text-lightsanjuan-blue-#6C8294 max-md:hidden md:mb-5">
         {plan.desc}
       </p>
       <span className="mb-6 inline-block font-dm text-[3rem] text-sanjuan-blue-#36536B">

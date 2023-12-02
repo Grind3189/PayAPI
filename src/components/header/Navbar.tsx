@@ -27,7 +27,7 @@ const Navbar = ({ showNav, toggleNav }: NavbarProp) => {
   ];
   return (
     <nav
-      className={`right-0 top-0 z-50 h-full w-[85%] px-6 transition-all max-md:fixed max-md:bg-mirage-blue-#1B262F md:flex md:items-center ${
+      className={`right-0 top-0 z-50 h-full w-[85%] px-6 transition-all max-md:fixed max-md:bg-mirage-blue-#1B262F md:flex md:items-center md:px-0 ${
         showNav
           ? "visible translate-x-0 opacity-100"
           : "max-md:invisible max-md:translate-x-[50%] max-md:opacity-0"
