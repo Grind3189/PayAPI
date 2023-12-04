@@ -19,8 +19,8 @@ const Clients = () => {
       className="mb-20 flex flex-col gap-16 overflow-hidden bg-mirage-blue-#1B262F px-6 py-20 text-[#FBFCFE] md:mb-[6.25rem] md:px-28 md:py-[5.5rem] xl:mb-[1.125rem] xl:flex-row-reverse xl:items-center xl:justify-center xl:gap-[8.1875rem] xl:px-40 xl:py-[6.25rem]"
     >
       <div className="relative grid grid-cols-2 place-items-center gap-x-[3.0625rem] gap-y-11 md:grid-cols-3 md:gap-x-[3.75rem] md:gap-y-10">
-        {clients.map((client) => {
-          return <img src={client} alt={client + " logo"} />;
+        {clients.map((client, i) => {
+          return <img src={client} alt={client + " logo"} key={i} />;
         })}
         <img
           src={circle}

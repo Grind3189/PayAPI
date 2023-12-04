@@ -34,7 +34,7 @@ const Features = () => {
     <section className="flex flex-col gap-12 px-6 md:flex-row md:gap-[0.625rem] xl:w-[1110px] xl:mx-auto xl:justify-between xl:px-0 mb-20 md:mb-[6.25rem]">
       {featureList.map((feature) => {
         return (
-          <div className="text-center font-publicSans">
+          <div className="text-center font-publicSans" key={feature.title}>
             <img src={feature.image} alt={feature.alt} className="mx-auto mb-8" />
             <h1 className="mb-4 text-[1.125rem] font-bold tracking-[-0.138px] text-sanjuan-blue-#36536B">
               {feature.title}

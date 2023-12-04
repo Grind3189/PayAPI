@@ -30,7 +30,7 @@ const Plan = ({ plan }: PlanProp) => {
       <div className="flex flex-col gap-2 border-b border-t border-b-gray-300 border-t-gray-300 py-6">
         {plan.inclusions.map((inclusion) => {
           return (
-            <div className="mx-auto flex w-[134px] items-center justify-start gap-6 xl:mx-0">
+            <div className="mx-auto flex w-[134px] items-center justify-start gap-6 xl:mx-0" key={inclusion.name}>
               <img
                 src={check}
                 alt="check"

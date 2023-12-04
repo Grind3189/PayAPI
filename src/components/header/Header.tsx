@@ -28,7 +28,7 @@ const Header = () => {
   };
   return (
     <header
-      className={`fixed top-0 z-[999] flex w-full justify-center transition-all duration-500 ${
+      className={`fixed z-50 top-0 flex w-full justify-center transition-all duration-500 ${
         isScrolled ? "bg-[#FBFCFE] shadow-md" : "bg-transparent shadow-none"
       }`}
     >
@@ -51,7 +51,7 @@ const Header = () => {
             initial={{scale: 0}}
             animate={{scale: 1}}
             transition={{duration: 1}}
-            className="absolute right-[-300px] top-[-370px] -z-50 md:right-[-510px] md:top-[-450px] xl:right-[-300px] xl:top-[-500px]"
+            className="absolute right-[-300px] top-[-370px] md:right-[-510px] md:top-[-450px] xl:right-[-300px] xl:top-[-500px] -z-50"
           />
         )}
       </div>
