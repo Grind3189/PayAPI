@@ -43,7 +43,7 @@ const Navbar = ({ showNav, toggleNav }: NavbarProp) => {
       <ul className="flex gap-8 text-center font-publicSans text-[1.25rem] font-bold max-md:mb-8 max-md:flex-col max-md:text-[#FBFCFE] md:text-[0.9375rem] md:text-sanjuan-blue-#36536B">
         {navigations.map((nav) => {
           return (
-            <li className="opacity-75 lg:hover:opacity-100" key={nav.name}>
+            <li className="opacity-75 lg:hover:opacity-100" key={nav.name} onClick={toggleNav}>
               <Link to={nav.link}>{nav.name}</Link>
             </li>
           );

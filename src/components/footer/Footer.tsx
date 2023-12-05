@@ -20,7 +20,7 @@ const Footer = () => {
               return (
                 <li className="text-[#FBFCFE]" key={link}>
                   <Link
-                    to="#"
+                    to={link.toLowerCase()}
                     className="font-publicSans text-[0.9375rem] font-bold opacity-70"
                   >
                     {link}

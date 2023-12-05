@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/Home";
 import Pricing from "pages/Pricing";
@@ -11,6 +12,7 @@ interface Routes {
 }
 
 function App() {
+  const location = useLocation();
   const routes: Routes[] = [
     {
       element: <Home />,
@@ -30,10 +32,16 @@ function App() {
     },
   ];
 
+  useEffect(() => {
+    const scrollToTop = () => window.scrollTo(0, 0);
+
+    scrollToTop();
+  }, [location.pathname]);
+
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        {routes.map((route,i) => {
+        {routes.map((route, i) => {
           return <Route key={i} path={route.path} element={route.element} />;
         })}
       </Route>
